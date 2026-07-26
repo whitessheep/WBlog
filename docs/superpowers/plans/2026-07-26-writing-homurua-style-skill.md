@@ -249,7 +249,7 @@ of the source character count.
 Run:
 
 ```powershell
-python 'C:\Users\WhiteSheep\.codex\skills\.system\skill-creator\scripts\quick_validate.py' '.agents\skills\writing-homurua-style'
+python -X utf8 'C:\Users\WhiteSheep\.codex\skills\.system\skill-creator\scripts\quick_validate.py' '.agents\skills\writing-homurua-style'
 ```
 
 Expected: validation succeeds with no frontmatter, naming, or folder errors.
