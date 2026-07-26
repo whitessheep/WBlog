@@ -2,15 +2,17 @@
 date: '2026-03-07T16:16:33+08:00'
 draft: false
 title: 'Lua String'
+slug: "lua-string"
+description: "从 TString 数据结构出发，梳理 Lua 短字符串与长字符串的存储、哈希和垃圾回收机制，以及字符串拼接与 Lua/C 交互中的常见开销。"
 image: ""
 math: true
 license: true
 hidden: false
 comments: true
 categories:
-    - "lua"
+    - "Lua"
 tags:
-    - "lua"
+    - "Lua"
 ---
 Lua 中的字符串（String）实现非常精巧，它兼顾了执行效率和内存管理的便利性。自 Lua 5.2.1 版本起，Lua 对字符串的底层实现进行了重大优化，将其明确区分为了短字符串（Short String）和长字符串（Long String）。
 

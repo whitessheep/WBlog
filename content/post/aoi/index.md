@@ -2,6 +2,8 @@
 date: '2026-03-01T16:14:32+08:00'
 draft: false
 title: 'AOI'
+slug: "aoi"
+description: "从玩法和算法两个维度梳理 AOI 系统，比较九宫格、灯塔、十字链表与四叉树等方案，并说明九宫格 AOI 的数据结构和视野更新流程。"
 image: ""
 math: true
 license: true

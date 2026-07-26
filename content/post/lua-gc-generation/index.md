@@ -2,15 +2,19 @@
 date: '2026-02-08T18:32:29+08:00'
 draft: false
 title: 'Lua 分代 GC'
+slug: "lua-gc-generation"
+description: "梳理 Lua 分代 GC 的对象年龄、向后写屏障、Minor Collection、链表清扫，以及回退到 Major GC 的条件和优化思路。"
+aliases:
+    - "/p/lua-分代-gc/"
 image: ""
 math: true
 license: true
 hidden: false
 comments: true
 categories:
-    - "lua"
+    - "Lua"
 tags:
-    - "lua"
+    - "Lua"
     - "GC"
 ---
 

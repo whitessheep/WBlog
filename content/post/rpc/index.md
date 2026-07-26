@@ -2,6 +2,10 @@
 date: '2026-02-23T17:42:37+08:00'
 draft: false
 title: 'RPC 框架'
+slug: "rpc"
+description: "从协议设计、序列化、网络传输、调用路由和异常治理五个层次，梳理 RPC 框架的组成与各层职责。"
+aliases:
+    - "/p/rpc-框架/"
 image: ""
 math: true
 license: true

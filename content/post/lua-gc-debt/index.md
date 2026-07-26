@@ -7,6 +7,10 @@ license: true
 hidden: false
 comments: true
 title: "Lua 增量GC 演进：从阈值模型到 Debt (债务) 模型"
+slug: "lua-gc-debt"
+description: "对比 Lua 5.1 的阈值模型与后续版本的 GC Debt 模型，说明步进计算、债务含义及其对增量回收节奏的影响。"
+aliases:
+    - "/p/lua-增量gc-演进从阈值模型到-debt-债务-模型/"
 categories:
     - "Lua"
 tags:

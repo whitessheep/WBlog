@@ -2,6 +2,8 @@
 date: '2026-02-27T18:14:15+08:00'
 draft: false
 title: 'Sproto'
+slug: "sproto"
+description: "介绍 Sproto 的头部与数据区布局、内联编码和递归解析流程，并从性能、压缩率、GC 压力与生态几个方面对比 Protobuf。"
 image: ""
 math: true
 license: true

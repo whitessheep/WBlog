@@ -2,6 +2,8 @@
 date: '2026-02-28T15:48:39+08:00'
 draft: false
 title: 'Flatbuffers'
+slug: "flatbuffers"
+description: "介绍 FlatBuffers 的 vtable、内存布局、对齐与零拷贝原理，并说明它的兼容方式、性能特点和使用限制。"
 image: ""
 math: true
 license: true

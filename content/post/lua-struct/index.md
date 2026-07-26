@@ -1,5 +1,9 @@
 ---
 title: "Lua 数据类型与GC对象"
+slug: "lua-struct"
+description: "从 TValue、GCObject、Closure、Proto 和 UpVal 等结构出发，梳理 Lua 基本类型与垃圾回收对象的内存组织。"
+aliases:
+    - "/p/lua-数据类型与gc对象/"
 date: 2026-02-05T18:00:00+08:00
 math: true
 license: true
@@ -7,9 +11,9 @@ hidden: false
 comments: true
 draft: false
 categories:
-    - "lua"
+    - "Lua"
 tags:
-    - "lua"
+    - "Lua"
 ---
 
 ## TValue

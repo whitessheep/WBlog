@@ -2,6 +2,8 @@
 date: '2026-02-27T16:30:17+08:00'
 draft: false
 title: 'Protocol Buffers'
+slug: "protocol-buffers"
+description: "从 wire type、Varint 和 Length-delimited 编码出发，拆解 Protocol Buffers 的字段布局、序列化与反向解析过程。"
 image: ""
 math: true
 license: true

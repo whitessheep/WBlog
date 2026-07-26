@@ -1,5 +1,7 @@
 ---
 title: "hello world"
+slug: "hello-world"
+description: "记录建立这个博客的初衷，在技术快速发展的时代继续整理自己的生活、思考与成长。"
 date: 2024-01-29
 categories:
     - "随笔"

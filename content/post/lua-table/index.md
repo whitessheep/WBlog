@@ -1,5 +1,7 @@
 ---
 title: "Lua Table"
+slug: "lua-table"
+description: "结合 Lua Table 的数组与哈希结构，说明整数键归属、冲突处理、Rehash 过程，以及 pairs 和 ipairs 的迭代行为。"
 date: 2026-02-05T18:00:00+08:00
 math: true
 license: true

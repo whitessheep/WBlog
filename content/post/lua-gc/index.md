@@ -1,5 +1,9 @@
 ---
 title: "Lua 增量 GC"
+slug: "lua-gc"
+description: "梳理 Lua 增量垃圾回收的三色标记、状态机、写屏障和双白机制，以及 pause 与 stepmul 对回收节奏的影响。"
+aliases:
+    - "/p/lua-增量-gc/"
 date: 2026-02-05T18:00:00+08:00
 math: true
 license: true
