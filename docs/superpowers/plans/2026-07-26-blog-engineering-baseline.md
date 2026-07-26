@@ -260,8 +260,8 @@ Do not change any other category or tag.
 Run:
 
 ```powershell
-rg --files-without-match '^slug: \"[a-z0-9-]+\"$' content/post -g '*.md'
-rg --files-without-match '^description: \".+\"$' content/post -g '*.md'
+rg --files-without-match '^slug: \"[a-z0-9-]+\"\r?$' content/post -g '*.md'
+rg --files-without-match '^description: \".+\"\r?$' content/post -g '*.md'
 rg -n '^\s+- "lua"$' content/post -g '*.md'
 git diff --check -- content/post
 git diff --word-diff=porcelain -- content/post
@@ -566,8 +566,8 @@ canonical post URLs.
 Run:
 
 ```powershell
-rg --files-without-match '^slug: \"[a-z0-9-]+\"$' content/post -g '*.md'
-rg --files-without-match '^description: \".+\"$' content/post -g '*.md'
+rg --files-without-match '^slug: \"[a-z0-9-]+\"\r?$' content/post -g '*.md'
+rg --files-without-match '^description: \".+\"\r?$' content/post -g '*.md'
 rg -n '^\s+- "lua"$' content/post -g '*.md'
 git diff --check
 git status --short
