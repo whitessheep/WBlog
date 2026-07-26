@@ -540,21 +540,25 @@ No canonical post URL may contain percent-encoded Chinese text.
 Check that these files exist under `$destination`:
 
 ```powershell
-$aliasFiles = @(
-  'p\rpc-框架\index.html',
-  'p\lua-增量gc-演进从阈值模型到-debt-债务-模型\index.html',
-  'p\lua-分代-gc\index.html',
-  'p\lua-数据类型与gc对象\index.html',
-  'p\lua-增量-gc\index.html'
-)
-$aliasFiles | ForEach-Object {
-  $path = Join-Path $destination $_
-  if (-not (Test-Path -LiteralPath $path)) { throw "Missing alias: $_" }
-  Select-String -LiteralPath $path -Pattern 'url=/p/'
+$aliases = [ordered]@{
+  'p\rpc-框架\index.html' = 'https://weissgoat.pages.dev/p/rpc/'
+  'p\lua-增量gc-演进从阈值模型到-debt-债务-模型\index.html' = 'https://weissgoat.pages.dev/p/lua-gc-debt/'
+  'p\lua-分代-gc\index.html' = 'https://weissgoat.pages.dev/p/lua-gc-generation/'
+  'p\lua-数据类型与gc对象\index.html' = 'https://weissgoat.pages.dev/p/lua-struct/'
+  'p\lua-增量-gc\index.html' = 'https://weissgoat.pages.dev/p/lua-gc/'
+}
+$aliases.GetEnumerator() | ForEach-Object {
+  $path = Join-Path $destination $_.Key
+  if (-not (Test-Path -LiteralPath $path)) { throw "Missing alias: $($_.Key)" }
+  $html = Get-Content -Raw -Encoding utf8 -LiteralPath $path
+  $redirect = "http-equiv=refresh content=`"0; url=$($_.Value)`""
+  if ($html -notmatch [regex]::Escape($redirect)) {
+    throw "Wrong alias target: $($_.Key)"
+  }
 }
 ```
 
-Expected: all five alias files exist and contain redirects to their new
+Expected: all five alias files exist and redirect to their exact absolute
 canonical post URLs.
 
 - [ ] **Step 5: Verify metadata completeness and repository safety**
