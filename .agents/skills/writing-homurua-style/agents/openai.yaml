@@ -1,0 +1,4 @@
+interface:
+  display_name: "Homurua 博客文风"
+  short_description: "使用既定的平实工程师声线完成中文博客文章的写作、改写与润色"
+  default_prompt: "Use $writing-homurua-style to write or revise this blog post in the project language voice."
