@@ -1,5 +1,5 @@
 baseURL = "https://weissgoat.pages.dev/"
-languageCode = "en-us"
+languageCode = "zh-CN"
 title        = "白山羊"
 theme = "hugo-theme-stack"
 # Theme i18n support
@@ -19,6 +19,3 @@ hasCJKLanguage = true            # 开启中日韩语言统计支持
 [permalinks]
     post = "/p/:slug/"
     page = "/:slug/"
-
-[services.disqus]
-    shortname = "hugo-theme-stack"

@@ -2,6 +2,8 @@
 date: '{{ .Date }}'
 draft: true
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
+slug: ""
+description: ""
 image: ""
 math: true
 license: true
